@@ -207,6 +207,14 @@ a:hover {
 
 
 
+/* NAVIGATION STYLES */
+
+ul {
+    list-style-type: none;
+}
+
+
+
 /* BACKGROUND IMAGES */
 
 .bg-succs {
@@ -236,18 +244,11 @@ a:hover {
 /* LOGO STYLINGS */
 
 .logo {
-    /* background-image: url("images/leaf.png"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 4rem;
-    height: 4rem;
-    position: relative;
-    top: 1rem;
-    right: 0;
-    bottom: 1rem;
-    left: 5rem;
-
+    max-height: 80px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 1rem;
 }
 
 

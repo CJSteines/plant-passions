@@ -12,6 +12,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fuggles&display=swap" rel="stylesheet">
 
+<!-- Viewport meta for responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Fontawesome HTML ELEMENTS-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
@@ -20,22 +23,25 @@
 
 </head>
 
+
 <body>
 
 <!-- HEADER BANNER -->
     <header>
-        <section class="banner grid-spaceAround fixed">
-            <div class="col-6-middle centered">
+        <section class="banner grid-spaceBetween fixed">
+            <div class="col-6-middle margin-l centered">
               <h1 class="light-text"> Plant Passions </h1>
               <h3 class="light-text med-text"> Where people and plants thrive.</h3>
             </div>
-            <div class="col-3-right padded-1">
-                <img class="logo" src="images/leaf.png">
+            <div class="col-2-right padded-1">
+                <div class="text-right"><img class="logo" src="images/leaf.png"></div>
                 <nav class="light-text text-right">
-                    <h2>About</h2>
-                    <h2>Plant Care</h2>
-                    <h2>Plant Catalog</h2>
-                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#plant-care">Plant Care</a></li>
+                        <li><a href="#catalog">Our Catalog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
                 </nav>
             </div>
         </section>

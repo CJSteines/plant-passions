@@ -43,6 +43,35 @@ aside {
 	transition-delay: 0.5s;
 }
 
+.trans (@transition: .3s) {
+    -webkit-transition: all @transition ease-in-out;
+       -moz-transition: all @transition ease-in-out;
+            transition: all @transition ease-in-out;
+  }
+
+.hidden-button {
+    background-color: inherit;
+    color: inherit;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+}
+
+.pop-form {
+    display:none;
+    position:fixed;
+    top:10.3%;
+    left:10.3%;
+    width:80%;
+    height:80%;
+    outline:10px solid @link;  
+}
+
+
+
 
 /* UTILITY CLASSES */
 
@@ -111,6 +140,9 @@ aside {
 .landscape      { padding-bottom: 66%; }
 .landscape-wide { padding-bottom: 56%; }
 
+.bg-green { background-color:#2C5530;}
+.bg-ivory { background-color: #FDFCED;}
+
 
     /* ---Background Position---- */
 .bg-pos-t { background-position: top; }
@@ -128,6 +160,10 @@ aside {
 
 
     /* -----Other Positioning---- */
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
 .vertical-centered {
     margin: 0;
     position: relative;
@@ -139,7 +175,6 @@ aside {
 
 
 /* TYPOGRAPHY STYLES */
-
 
 h1 {
     font-family: 'Fuggles', cursive, serif;
@@ -170,6 +205,8 @@ a{
 a:hover {
     color: #2C5530;
 }
+
+
 
     /* ---Text Coloring--- */
 .light-text     { color: #FDFCED;}
@@ -303,7 +340,7 @@ nav div:last-child {
 
 
 
-/* BACKGROUND IMAGES */
+/* BACKGROUND STYLINGS & IMAGES */
 
 .bg-succs {
     background-image: url("images/succulents.jpg");
@@ -312,6 +349,43 @@ nav div:last-child {
     min-height: 10rem;
 }
 
+
+    /* NEWSLETTER FORM */
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: teal;
+}
+
+textarea {
+  min-height: 4rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: #6C7A89;
+  font-weight: bold;
+}
+
+form button {
+  background-color:#6C7A89;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+}
 
 
 /* ICON GRID */
